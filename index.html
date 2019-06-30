@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>
+        Healthasity
+    </title>
+    <!-- FONTS -->
+    <!-- ICONS -->
+    <link
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
+    <!-- BOOTSTRAP -->
+    <link
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+    rel="stylesheet">
+</head>
+<body>
+<style>
+    .material-icons {
+        vertical-align: bottom;
+        /* display: inline-flex; */
+    }
+    .weight-heavy {
+        font-weight: 700;
+    }
+    .health-category-blocks .card {
+        border-radius: 12px;
+        width: 150px;
+        margin-right: 1.5rem;
+        border: none;
+    }
+    .health-category-blocks .card .card-body {
+        padding: 1rem;
+    }
+    .health-category-blocks .card .card-body .category-title {
+        color: #fff;
+        font-weight: 700;
+    }
+    /* COLORS */
+    .c-red {
+        color: rgb(255, 69, 58);
+    }
+    .bg-red {
+        background-color: rgb(255, 69, 58);
+    }
+</style>
+    <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-4">
+        <a
+        href="#"
+        class="navbar-brand">
+            <i class="material-icons">menu</i>
+        </a>
+        <a
+        href="#"
+        class="navbar-brand weight-heavy">
+            healthasity
+        </a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                        Riorden Dasan
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <i class="material-icons">account_circle</i>
+        </div>
+    </nav>
+
+    <div id="viewport">
+        <div class="container" style="max-width: 1500px;">
+            <header class="mb-4">
+                <div class="row">
+                    <div class="col-sm">
+                        <div class="page-title">
+                            <h1>
+                                Health Data
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-auto">
+                        <div class="d-flex">
+                            <div class="start-date">
+                                <!-- <a href="#">
+                                    <small>
+                                        Today
+                                    </small>
+                                </a>
+                                <br> -->
+                                <button
+                                class="btn btn-link text-dark"
+                                type="button">
+                                    Saturday, Jun 29, 2019
+                                </button>
+                            </div>
+                            <div class="end-date">
+                                <button
+                                class="btn btn-outline-primary"
+                                type="button">
+                                    <i class="material-icons">add</i>&nbsp;End
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <input
+                        class="form-control w-100"
+                        placeholder="Search"
+                        type="text">
+                    </div>
+                </div>
+            </header>
+            <div class="nav-scroller">
+                <nav class="nav health-category-blocks">
+                    <div class="card bg-red">
+                        <div class="card-body">
+                            <div class="category-title">
+                                Activity
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="category-title">
+                                Nutrition
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+    
+
+<!-- JAVASCRIPT -->
+    <!-- BOOTSTRAP -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+</body>
+</html>
