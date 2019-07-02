@@ -22,34 +22,164 @@
 </head>
 <body>
 <style>
-    .material-icons {
-        vertical-align: bottom;
-        /* display: inline-flex; */
-    }
-    .weight-heavy {
-        font-weight: 700;
-    }
-    .health-category-blocks .card {
-        border-radius: 12px;
-        width: 150px;
-        margin-right: 1.5rem;
-        border: none;
-    }
-    .health-category-blocks .card .card-body {
-        padding: 1rem;
-    }
-    .health-category-blocks .card .card-body .category-title {
-        color: #fff;
-        font-weight: 700;
-    }
-    /* COLORS */
-    .c-red {
-        color: rgb(255, 69, 58);
-    }
-    .bg-red {
-        background-color: rgb(255, 69, 58);
-    }
+/* CLASSES */
+.material-icons {
+    vertical-align: bottom;
+    /* display: inline-flex; */
+}
+.weight-heavy {
+    font-weight: 700;
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    padding-bottom: 1rem;
+    margin-top: -1px;
+    overflow-x: auto;
+    color: rgba(255, 255, 255, .75);
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+.br-0 {
+    border-radius: 0;
+}
+.br-1 {
+    border-radius: .25rem;
+}
+.br-2 {
+    border-radius: .5rem;
+}
+.br-3 {
+    border-radius: 1rem;
+}
+.br-4 {
+    border-radius: 1.5rem;
+}
+.br-5 {
+    border-radius: 3rem;
+}
+
+/* PAGE */
+/* Categories */
+.health-category-blocks .card {
+    min-width: 10rem;
+    width: 10rem;
+    height: 4rem;
+    margin-right: 1rem;
+}
+.health-category-blocks .card .card-body {
+    padding: 1rem;
+}
+.health-category-blocks .card .card-body .category-title {
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+.time-line td {
+    vertical-align: middle;
+}
+
+
+/* COLORS */
+/* 
+    Apple Colors
+    https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/color/
+*/
+/* Blue */
+.text-blue {
+    color: rgb(10, 132, 255);
+}
+.bg-blue {
+    background-color: rgb(10, 132, 255);
+}
+/* Gray */
+.text-gray {
+    color: rgb(152, 152, 157);
+}
+.bg-gray {
+    background-color: rgb(152, 152, 157);
+}
+/* Green */
+.text-green {
+    color: rgb(48, 209, 88);
+}
+.bg-green {
+    background-color: rgb(48, 209, 88);
+}
+/* Indigo */
+.text-indigo {
+    color: rgb(94, 92, 230);
+}
+.bg-indigo {
+    background-color: rgb(94, 92, 230);
+}
+/* Orange */
+.text-indigo {
+    color: rgb(255, 159, 10);
+}
+.bg-indigo {
+    background-color: rgb(255, 159, 10);
+}
+/* Pink */
+.text-pink {
+    color: rgb(255, 55, 95);
+}
+.bg-pink {
+    background-color: rgb(255, 55, 95);
+}
+/* Purple */
+.text-purple {
+    color: rgb(191, 90, 242);
+}
+.bg-purple {
+    background-color: rgb(191, 90, 242);
+}
+/* Purple */
+.text-purple {
+    color: rgb(191, 90, 242);
+}
+.bg-purple {
+    background-color: rgb(191, 90, 242);
+}
+/* Red */
+.text-red {
+    color: rgb(255, 69, 58);
+}
+.bg-red {
+    background-color: rgb(255, 69, 58);
+}
+/* Teal */
+.text-teal {
+    color: rgb(100, 210, 255);
+}
+.bg-teal {
+    background-color: rgb(100, 210, 255);
+}
+/* Yellow */
+.text-yellow {
+    color: rgb(255, 214, 10);
+}
+.bg-yellow {
+    background-color: rgb(255, 214, 10);
+}
+
+.bg-light-gray {
+    background-color: #e9e9e9;
+}
+
+/* OVER WRITES */
+.card {
+    border: none;
+}
 </style>
+
     <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm mb-4">
         <a
         href="#"
@@ -124,30 +254,122 @@
                 <div class="row">
                     <div class="col">
                         <input
-                        class="form-control w-100"
+                        class="form-control bg-light-gray border-0 w-100"
                         placeholder="Search"
                         type="text">
                     </div>
                 </div>
             </header>
-            <div class="nav-scroller">
+            <div class="nav-scroller" style="height: 4rem;">
                 <nav class="nav health-category-blocks">
-                    <div class="card bg-red">
+                    <div class="card bg-red br-3">
                         <div class="card-body">
                             <div class="category-title">
                                 Activity
                             </div>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card bg-green br-3">
                         <div class="card-body">
                             <div class="category-title">
                                 Nutrition
                             </div>
                         </div>
                     </div>
+                    <div class="card bg-teal br-3">
+                        <div class="card-body">
+                            <div class="category-title">
+                                Water
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-yellow br-3">
+                        <div class="card-body">
+                            <div class="category-title text-dark">
+                                Time
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-blue br-3">
+                        <div class="card-body">
+                            <div class="category-title">
+                                Sleep
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-purple br-3">
+                        <div class="card-body">
+                            <div class="category-title">
+                                Mindfulness
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-gray br-3">
+                        <div class="card-body">
+                            <div class="category-title">
+                                ...
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
+
+            <hr>
+
+            <div class="time-line">
+                <table class="table table-borderless">
+                    <tbody>
+                        <tr>
+                            <td style="width: 100px;">
+                                
+                            </td>
+                            <td style="width: 30px;">
+                                -
+                            </td>
+                            <td>
+                                <h4>
+                                    Saturday, June 29, 2019
+                                </h4>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px;">
+                                2:00 pm
+                            </td>
+                            <td style="width: 30px;">
+                                -
+                            </td>
+                            <td>
+                                <div class="card bg-red br-3">
+                                    <div class="card-body">
+                                        <div class="category-title">
+                                            Running
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width: 100px;">
+                                2:00 pm
+                            </td>
+                            <td style="width: 30px;">
+                                -
+                            </td>
+                            <td>
+                                <div class="card bg-gray br-3">
+                                    <div class="card-body">
+                                        <div class="category-title">
+                                            ...
+                                        </div>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
         </div>
     </div>
     
