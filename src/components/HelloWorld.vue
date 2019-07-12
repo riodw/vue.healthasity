@@ -1,6 +1,6 @@
 <template>
     <div class="hello">
-        count: {{ count }}
+        count: {{ count.data }}
     </div>
 </template>
 
