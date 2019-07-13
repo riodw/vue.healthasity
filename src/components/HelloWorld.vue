@@ -3,9 +3,9 @@
         <Masthead msg="Welcome to Your Vue.js App" />
         <div
         id="leftNav"
-        class="collapse fixed-top h-100 bg-white drawer" style="width: 280px">
-            <div class="nav flex-column nav-pills mx-3" style="margin-top: 5.5rem;">
-                <a class="nav-link active" href="#">Active</a>
+        class="drawer collapse show fixed-top h-100 bg-light border-right" style="width: 280px">
+            <div class="nav flex-column nav-pills" style="margin-top: 5.5rem;">
+                <a class="nav-link active rounded-0" href="#">Active</a>
                 <a class="nav-link" href="#">Link</a>
                 <a class="nav-link" href="#">Link</a>
                 <a class="nav-link disabled" href="#">Disabled</a>
@@ -57,7 +57,7 @@
                 </div>
             </header>
             <div class="nav-scroller" style="height: 4rem;">
-                <nav class="nav health-category-blocks">
+                <nav class="nav health-category-blocks dragscroll">
                     <div class="card bg-red br-3">
                         <div class="card-body">
                             <div class="category-title">
