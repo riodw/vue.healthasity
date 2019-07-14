@@ -15,7 +15,8 @@
         "dragscroll": "0.0.8",
         "jquery": "^3.4.1",
         "popper.js": "^1.15.0",
-        "vue": "^2.6.10"
+        "vue": "^2.6.10",
+        "vue-router": "^3.0.7"
     },
     "devDependencies": {
         "@vue/cli-plugin-babel": "^3.9.0",

@@ -1,8 +1,8 @@
 <template>
     <nav class="navbar fixed-top navbar-expand-md navbar-light bg-white shadow-sm">
         <a
-        data-toggle="collapse"
-        href="#leftNav"
+        onclick="$('#LeftNav').toggle();"
+        href="javascript:void(0);"
         class="navbar-brand">
             <i class="material-icons">menu</i>
         </a>
@@ -43,22 +43,16 @@
 </template>
 
 <script>
-import axios from 'axios'
-
 export default {
     name: 'Masthead',
     props: {
-        msg: String
     },
     data() {
         return {
-            count: 2
         }
     },
     mounted() {
-        axios
-            .get('https://us-central1-healthasity.cloudfunctions.net/sample-json')
-            .then(response => (this.count = response))
+        
     }
 }
 </script>

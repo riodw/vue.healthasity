@@ -1,16 +1,5 @@
 <template>
-    <div class="hello">
-        <Masthead msg="Welcome to Your Vue.js App" />
-        <div
-        id="leftNav"
-        class="drawer collapse show fixed-top h-100 bg-light border-right" style="width: 280px">
-            <div class="nav flex-column nav-pills" style="margin-top: 5.5rem;">
-                <a class="nav-link active rounded-0" href="#">Active</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link" href="#">Link</a>
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </div>
-        </div>
+    <div class="base">
         <div class="container" style="max-width: 1200px; margin-top: 5rem;">
             <header class="mb-4">
                 <div class="row">
@@ -158,20 +147,16 @@
             </div><!-- ./time-line -->
             count: {{ count.data }}
         </div>
-
     </div>
 </template>
 
 <script>
-// vendor
-import axios from 'axios'
 // project
-import Masthead from './Masthead.vue'
 
 export default {
     name: 'HelloWorld',
     components: {
-        Masthead,
+        
     },
     props: {
         msg: String
@@ -182,9 +167,9 @@ export default {
         }
     },
     mounted() {
-        axios
-            .get('https://us-central1-healthasity.cloudfunctions.net/sample-json')
-            .then(response => (this.count = response))
+        // $axios
+        //     .get('https://us-central1-healthasity.cloudfunctions.net/sample-json')
+        //     .then(response => (this.count = response))
     }
 }
 </script>

@@ -1,16 +1,20 @@
 <template>
     <div id="app">
-        <HelloWorld msg="Welcome to Your Vue.js App" />
+        <Masthead />
+        <LeftNav />
+        <router-view></router-view>
     </div>
 </template>
 
 <script>
-    import HelloWorld from './components/HelloWorld.vue'
+    import Masthead from '@/components/Masthead.vue'
+    import LeftNav from '@/components/LeftNav.vue'
 
     export default {
         name: 'app',
         components: {
-            HelloWorld,
+            Masthead,
+            LeftNav,
         },
     }
 </script>

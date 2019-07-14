@@ -1,14 +1,24 @@
-'use strict'
-
 import Vue from 'vue'
-import App from './App.vue'
+// vendor
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'dragscroll'
-import ApexCharts from 'apexcharts'
+// router
+import router from '@/router'
+// components
+import App from '@/App'
+
 
 Vue.config.productionTip = false
 
+
+// GLOBALS
+window.$ = require('jquery')
+window.$axios = require('axios')
+window.$ApexCharts = require('apexcharts')
+
+// app
 new Vue({
+    router,
     render: h => h(App),
 }).$mount('#app')
