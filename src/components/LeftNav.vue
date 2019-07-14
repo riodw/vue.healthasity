@@ -5,31 +5,37 @@
         <div class="nav flex-column nav-pills" style="margin-top: 5.5rem;">
             <router-link
             to="/home"
-            class="nav-link active rounded-0">
+            active-class="active"
+            class="nav-link rounded-0">
                 Health Data
             </router-link>
             <router-link
             to="/time"
+            active-class="active"
             class="nav-link rounded-0">
                 Time
             </router-link>
             <router-link
             to="/goals"
+            active-class="active"
             class="nav-link rounded-0">
                 Goals
             </router-link>
             <router-link
             to="/location"
+            active-class="active"
             class="nav-link rounded-0">
                 Location
             </router-link>
             <router-link
             to="/nutrients"
+            active-class="active"
             class="nav-link rounded-0">
                 Nutrients
             </router-link>
             <router-link
             to="/settings"
+            active-class="active"
             class="nav-link rounded-0">
                 Settings
             </router-link>

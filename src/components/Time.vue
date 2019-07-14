@@ -6,7 +6,7 @@
                     <div class="col-sm">
                         <div class="page-title">
                             <h1>
-                                Health Data
+                                Time
                             </h1>
                         </div>
                     </div>
@@ -105,10 +105,8 @@
                 <table class="table table-borderless">
                     <tbody>
                         <tr>
-                            <td style="width: 100px;">
-                                
-                            </td>
-                            <td>
+                            <td style="width: 100px;"></td>
+                            <td colspan="2">
                                 <h4 class="m-0">
                                     Saturday, June 29, 2019
                                 </h4>
@@ -116,36 +114,64 @@
                         </tr>
                         <tr>
                             <td style="width: 100px;">
-                                2:00 pm
+                                8:00 pm
+                            </td>
+                            <td style="width: 50px;">
+                                <div class="text-center br-100 bg-purple text-white" style="width:35px; height: 35px; line-height: 1.9rem;">
+                                    <i class="material-icons">local_pizza</i>
+                                </div>
                             </td>
                             <td>
-                                <div class="card bg-red br-3">
-                                    <div class="card-body">
-                                        <div class="category-title">
-                                            Running
-                                        </div>
-                                    </div>
-                                </div>
+                                <h5 class="m-0">
+                                    Leisure
+                                    <span class="text-black-50 ml-2">
+                                        asdf
+                                    </span>
+                                </h5>
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 100px;">
-                                2:00 pm
+                            <td></td>
+                            <td></td>
+                            <td>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td rowspan="4">
+                                                <div class="text-center br-2 bg-purple text-white" style="width: 5px; height: 100px; line-height: 1.9rem;"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="card bg-gray br-3">
+                                                    <div class="card-body">
+                                                        <div class="category-title">
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <div class="card bg-gray br-3">
+                                                    <div class="card-body">
+                                                        <div class="category-title">
+                                                            ...
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </td>
                             <td>
-                                <div class="card bg-gray br-3">
-                                    <div class="card-body">
-                                        <div class="category-title">
-                                            ...
-                                        </div>
-                                    </div>
-                                </div>
                             </td>
                         </tr>
                     </tbody>
                 </table>
-            </div><!-- ./time-line -->
-            count: {{ count.data }}
+            </div>
         </div>
     </div>
 </template>
@@ -154,29 +180,27 @@
 // project
 
 export default {
-    name: 'HelloWorld',
+    name: 'HealthData',
     components: {
         
     },
     props: {
-        msg: String
+
     },
     data() {
         return {
-            count: 2
+
         }
     },
     mounted() {
-        // $axios
-        //     .get('https://us-central1-healthasity.cloudfunctions.net/sample-json')
-        //     .then(response => (this.count = response))
+    
     }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#leftNav {
-    z-index: 100;
+.table td {
+    padding-bottom: 10px;
 }
 </style>

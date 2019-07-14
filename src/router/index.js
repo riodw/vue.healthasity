@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 // components
-import HelloWorld from '@/components/HelloWorld.vue'
+import HealthData from '@/components/HealthData.vue'
+import Time from '@/components/Time.vue'
 
 Vue.use(Router)
 
@@ -16,7 +17,12 @@ export default new Router({
         {
             path: '/home',
             name: 'Home',
-            component: HelloWorld,
+            component: HealthData,
+        },
+        {
+            path: '/time',
+            name: 'Time',
+            component: Time,
         },
     ]
 })
