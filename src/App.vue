@@ -12,6 +12,12 @@
 
     export default {
         name: 'app',
+        data: function () {
+            return {
+                start_date: Date.now(),
+                end_date: null,
+            }
+        },
         components: {
             Masthead,
             LeftNav,

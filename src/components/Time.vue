@@ -22,7 +22,9 @@
                                 <button
                                 class="btn btn-link text-dark"
                                 type="button">
-                                    Saturday, Jun 29, 2019
+                                    <u>
+                                        Saturday, Jun 29, 2019
+                                    </u>
                                 </button>
                             </div>
                             <div class="end-date">
@@ -105,7 +107,7 @@
                 <table class="table table-borderless">
                     <tbody>
                         <tr>
-                            <td style="width: 100px;"></td>
+                            <td class="d-none d-sm-table-cell" style="width: 100px;"></td>
                             <td colspan="2">
                                 <h4 class="m-0">
                                     Saturday, June 29, 2019
@@ -113,8 +115,10 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="width: 100px;">
-                                8:00 pm
+                            <td
+                            class="d-none d-sm-table-cell"
+                            style="width: 100px;">
+                                8:30 pm
                             </td>
                             <td style="width: 50px;">
                                 <div class="text-center br-100 bg-purple text-white" style="width:35px; height: 35px; line-height: 1.9rem;">
@@ -124,21 +128,35 @@
                             <td>
                                 <h5 class="m-0">
                                     Leisure
-                                    <span class="text-black-50 ml-2">
-                                        asdf
+                                    <span class="text-purple d-none d-sm-inline ml-2">
+                                        3 h 5 min
+                                    </span>
+                                    <span class="text-black-50 d-inline d-sm-none ml-2">
+                                        <small>
+                                            8:30 pm
+                                        </small>
                                     </span>
                                 </h5>
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
+                            <td class="d-none d-sm-table-cell"></td>
                             <td></td>
                             <td>
                                 <table>
                                     <tbody>
                                         <tr>
-                                            <td rowspan="4">
-                                                <div class="text-center br-2 bg-purple text-white" style="width: 5px; height: 100px; line-height: 1.9rem;"></div>
+                                            <td rowspan="4" class="time-line-container">
+                                                <div class="time-line-block br-2 h-100 bg-purple text-white">
+                                                    &nbsp;
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr class="d-table-cell d-sm-none">
+                                            <td>
+                                                <span class="text-purple">
+                                                    3 h 5 min
+                                                </span>
                                             </td>
                                         </tr>
                                         <tr>
@@ -165,8 +183,6 @@
                                         </tr>
                                     </tbody>
                                 </table>
-                            </td>
-                            <td>
                             </td>
                         </tr>
                     </tbody>
@@ -201,6 +217,18 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .table td {
+    height: 100%;
     padding-bottom: 10px;
+}
+.time-line-container {
+    position: relative;
+}
+.time-line-block {
+    width: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
 </style>

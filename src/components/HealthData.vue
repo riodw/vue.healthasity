@@ -12,20 +12,26 @@
                     </div>
                     <div class="col-auto">
                         <div class="d-flex">
-                            <div class="start-date">
+                            <div class="select-date start-date">
                                 <!-- <a href="#">
                                     <small>
                                         Today
                                     </small>
                                 </a>
                                 <br> -->
-                                <button
-                                class="btn btn-link text-dark"
-                                type="button">
-                                    Saturday, Jun 29, 2019
-                                </button>
+                                <VueCtkDateTimePicker
+                                v-model="start_date"
+                                :formatted="'LLLL'"
+                                :no-clear-button="true"
+                                :auto-close="true"
+                                :only-date="true"
+                                :no-header="true"
+                                :no-label="true"
+                                :right="true"
+                                :button-now-translation="'Today'"
+                                ></VueCtkDateTimePicker>
                             </div>
-                            <div class="end-date">
+                            <div class="select-date end-date">
                                 <button
                                 class="btn btn-outline-primary"
                                 type="button">
@@ -157,11 +163,12 @@ export default {
     name: 'HealthData',
     components: {
     },
-    props: {
-
-    },
+    props: [
+        // 'start_date'
+    ],
     data() {
         return {
+            start_date: this.$moment().startOf('day'),
             count: 2
         }
     },
@@ -175,7 +182,17 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-#leftNav {
-    z-index: 100;
+</style>
+
+<style>
+.start-date {
+    margin-right: .5rem;
+}
+#DateTimePicker {
+    width: 100%;
+    min-width: 260px;
+    border: none;
+    font-size: inherit;
+    text-decoration: underline;
 }
 </style>
