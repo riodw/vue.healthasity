@@ -3,13 +3,20 @@ import Vue from 'vue'
 import 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'dragscroll'
+// axios
+import axios from 'axios'
+import VueAxios from 'vue-axios'
 // import VueScreenSize from 'vue-screen-size'
+// date picker
+import VueCtkDateTimePicker from 'vue-ctk-date-time-picker'
+import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css'
+// charts
+import VueApexCharts from 'vue-apexcharts'
+
 // router
 import router from '@/router'
 // components
 import App from '@/App'
-import VueCtkDateTimePicker from 'vue-ctk-date-time-picker'
-import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css'
 
 
 Vue.config.productionTip = false
@@ -20,12 +27,13 @@ Vue.config.productionTip = false
 
 // GLOBALS
 window.$ = require('jquery')
-window.$axios = require('axios')
-window.$ApexCharts = require('apexcharts')
-
+// middle
 Vue.use(require('vue-moment'))
+Vue.use(VueAxios, axios)
+
 // components
 Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker)
+Vue.component('apexchart', VueApexCharts)
 
 // app
 new Vue({

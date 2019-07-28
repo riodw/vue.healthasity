@@ -23,6 +23,7 @@
 .material-icons {
     vertical-align: bottom;
     /* display: inline-flex; */
+    font-size: inherit;
 }
 .weight-heavy {
     font-weight: 700;
@@ -41,7 +42,7 @@
     margin-top: -1px;
     overflow-y: hidden;
     overflow-x: auto;
-    color: rgba(255, 255, 255, .75);
+    color: #fff;
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
@@ -72,8 +73,8 @@
 /* Categories */
 .health-category-blocks .card {
     min-width: 10rem;
-    width: 10rem;
-    height: 4rem;
+    min-height: 4rem;
+    max-height: 8rem;
     margin-right: 1rem;
 }
 .health-category-blocks .card .card-body {

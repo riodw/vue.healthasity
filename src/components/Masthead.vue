@@ -14,15 +14,14 @@
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
-                    <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
+                    <button
+                    class="btn nav-link dropdown-toggle"
                     data-toggle="dropdown"
                     aria-haspopup="true"
                     aria-expanded="false">
                         Riorden Dasan
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    </button>
+                    <div class="dropdown-menu">
                         <a class="dropdown-item" href="#">
                             Action
                         </a>
@@ -36,8 +35,25 @@
                 </li>
             </ul>
         </div>
-        <div>
-            <i class="material-icons">account_circle</i>
+        <div class="dropdown">
+            <button
+            class="btn nav-link"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false">
+                <i class="material-icons">account_circle</i>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right">
+                <a class="dropdown-item" href="#">
+                    Action
+                </a>
+                <a class="dropdown-item" href="#">
+                    Another action
+                </a>
+                <a class="dropdown-item" href="#">
+                    Something else here
+                </a>
+            </div>
         </div>
     </nav>
 </template>

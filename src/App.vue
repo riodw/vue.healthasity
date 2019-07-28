@@ -31,4 +31,12 @@
     /* -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale; */
 }
+
+#DateTimePicker {
+    width: 100%;
+    min-width: 260px;
+    border: none;
+    font-size: inherit;
+    text-decoration: underline;
+}
 </style>
