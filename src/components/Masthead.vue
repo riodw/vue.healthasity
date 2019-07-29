@@ -6,11 +6,11 @@
         class="navbar-brand">
             <i class="material-icons">menu</i>
         </a>
-        <a
-        href="#"
+        <router-link
+        to="/"
         class="navbar-brand weight-heavy">
             healthasity
-        </a>
+        </router-link>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item dropdown">
@@ -40,7 +40,8 @@
             class="btn nav-link"
             data-toggle="dropdown"
             aria-haspopup="true"
-            aria-expanded="false">
+            aria-expanded="false"
+            style="font-size: 1rem">
                 <i class="material-icons">account_circle</i>
             </button>
             <div class="dropdown-menu dropdown-menu-right">

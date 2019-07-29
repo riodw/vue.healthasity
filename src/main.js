@@ -12,7 +12,10 @@ import VueCtkDateTimePicker from 'vue-ctk-date-time-picker'
 import 'vue-ctk-date-time-picker/dist/vue-ctk-date-time-picker.css'
 // charts
 import VueApexCharts from 'vue-apexcharts'
+// lodash
+import VueLodash from 'vue-lodash'
 
+/* PROJECT */
 // router
 import router from '@/router'
 // components
@@ -30,6 +33,7 @@ window.$ = require('jquery')
 // middle
 Vue.use(require('vue-moment'))
 Vue.use(VueAxios, axios)
+Vue.use(VueLodash)
 
 // components
 Vue.component('VueCtkDateTimePicker', VueCtkDateTimePicker)

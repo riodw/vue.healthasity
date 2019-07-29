@@ -47,6 +47,10 @@
                     </div>
                 </div>
             </header>
+
+            <router-view></router-view>
+
+
             <div class="nav-scroller" style="height: 4rem;">
                 <nav class="nav health-category-blocks dragscroll">
                     <div class="card bg-red br-3">

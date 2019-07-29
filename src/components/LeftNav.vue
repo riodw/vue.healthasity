@@ -21,18 +21,42 @@
             class="nav-link rounded-0">
                 Goals
             </router-link>
-            <router-link
+
+            <div class="dropdown-divider"></div>
+
+            <!-- <router-link
             to="/location"
             active-class="active"
             class="nav-link rounded-0">
                 Location
-            </router-link>
+            </router-link> -->
             <router-link
-            to="/nutrients"
+            to="/activity"
             active-class="active"
             class="nav-link rounded-0">
-                Nutrients
+                Activity
             </router-link>
+            <router-link
+            to="/nutrition"
+            active-class="active"
+            class="nav-link rounded-0">
+                Nutrition
+            </router-link>
+            <router-link
+            to="/sleep"
+            active-class="active"
+            class="nav-link rounded-0">
+                Sleep
+            </router-link>
+            <router-link
+            to="/mindfulness"
+            active-class="active"
+            class="nav-link rounded-0">
+                Mindfulness
+            </router-link>
+            
+            <div class="dropdown-divider"></div>
+
             <router-link
             to="/settings"
             active-class="active"
